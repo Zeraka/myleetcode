@@ -11,7 +11,6 @@ typedef struct Linklist{
 int CreatIntLinkList(int array[], Linklist* node, int length);
 int PrintLinklist(Linklist*node);
 int DeleteIntLinkList(Linklist* node);
-Linklist* joinLinklist(Linklist* node1, Linklist* node2);
 
 int PrintLinklist(Linklist* node)
 {
@@ -54,51 +53,8 @@ int DeleteIntLinkList(Linklist* node)
 	return 0;
 
 }
-Linklist* joinLinklist(Linklist* node1, Linklist* node2)
-{
-	Linklist* p1 = node1;
-	Linklist* p2 = node2;
-	Linklist* p3 = 0;
-
-		if( p1->value < p2->value)
-		{
-			p3 = p1;
-			p3->next = p2;
-			p1 = p1->next;
-		}else{
-			p3 = p2;
-			p2 = p2->next;
-		}
-
-
-	while(){
-		if( p1->value < p2->value)
-		{
-			p1
-		}
-	}
-
-	return p3;
-}
-
 
 int main()
 {
-	/* code */
-	int a[]={1,3,5,7};
-	int b[]={2,4,6,8};
-	Linklist*node1 = 0;
-	Linklist*node2 = 0;
-	Linklist* node3 = 0;
-
-	CreatIntLinkList(a, node1, 4);
-	CreatIntLinkList(b,node2, 4);
-	node3 = joinLinklist(node1, node2);
-
-	PrintLinklist(node3);
-
-	DeleteIntLinkList(node3);
-	DeleteIntLinkList(node1);
-	DeleteIntLinkList(node2);
-	return 0;
+	
 }

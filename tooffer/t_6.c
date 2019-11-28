@@ -13,7 +13,7 @@ typedef struct ListNode{
 	struct ListNode * next;
 }ListNode;
 
-
+typedef struct
 
 void PrintListReversingly(ListNode* head);
 
