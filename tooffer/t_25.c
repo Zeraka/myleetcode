@@ -54,6 +54,7 @@ int DeleteIntLinkList(Linklist* node)
 	return 0;
 
 }
+
 Linklist* joinLinklist(Linklist* node1, Linklist* node2)
 {
 	Linklist* p1 = node1;
